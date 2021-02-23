@@ -1,8 +1,4 @@
 # Project exclude paths
-/bourse-client/target/
-/bourse-client-spring-cloud-starter/target/
-/bourse-commons/target/
-/bourse-example/bourse-client-spring-cloud-example/target/
-/bourse-plugin/target/
-/bourse-protocol/target/
-/bourse-server/target/
+**/target/
+*.iml
+.idea
