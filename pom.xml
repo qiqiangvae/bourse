@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.qingcha</groupId>
+    <artifactId>bourse</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <description>手写的一个简单的注册中心和配置中心</description>
+    <modules>
+        <module>bourse-commons</module>
+        <module>bourse-protocol</module>
+        <module>bourse-server</module>
+        <module>bourse-client</module>
+        <module>bourse-plugin</module>
+        <module>bourse-client-spring-cloud-starter</module>
+        <module>bourse-example</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-all</artifactId>
+                <version>4.1.59.Final</version>
+            </dependency>
+            <dependency>
+                <groupId>com.caucho</groupId>
+                <artifactId>hessian</artifactId>
+                <version>4.0.63</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
